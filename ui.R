@@ -6,7 +6,7 @@ shinyUI(
     
     sidebarPanel(
       sliderInput('weight', 'Weight (kg)',70,min=0,max=300, step = 1),
-      sliderInput('height', 'Height (metres e.g 1.78)',1.7,min=0,max=2.5,step = 0.1),
+      sliderInput('height', 'Height (metres e.g 1.78)',1.7,min=0,max=2.5,step = 0.01),
       submitButton('Calculate BMI')
 ),
 mainPanel(
