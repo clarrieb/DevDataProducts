@@ -1,7 +1,5 @@
 library(shiny)
 
-BMI <- function(bmicalc) (renderText({input$weight}) * 2)
-
 shinyServer(
   function(input,output) {
     output$weight <-renderText({input$weight})
